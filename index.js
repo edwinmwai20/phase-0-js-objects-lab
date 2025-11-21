@@ -1,5 +1,37 @@
 //Write your code here
+const attendee ={
+  attendeeId:"T001",
+  name:"Alice Smith",
+  event :"JavaScript Conference",
+  ticketType:"VIP",
+  ticketPrice:150
+}
 
+function logAttendeeName(attendee){
+  console.log(attendee.name)
+
+}
+
+function logTicketPrice(attendee){
+  console.log(attendee.ticketPrice)
+
+}
+function updateTicketType(attendee,newticketType){
+  console.log(attendee.ticketType= newticketType)
+  
+}
+function updateTicketPrice(attendee,newticketPrice){
+  console.log(attendee.ticketPrice=newticketPrice)
+
+}
+function removeEventProperty(attendee){
+  delete attendee.event
+  return attendee
+}
+function addCheckedInProperty(attendee){
+  attendee.checkedIn =true;
+  return attendee
+}
 
 
 //Needed for the tests to work. Don't modify
